@@ -1,0 +1,60 @@
+.menu {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.clase1 img,
+.clase2 img {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+#modeButton {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    color: white;
+}
+
+.dark-mode {
+    background-color: black;
+}
+
+.light-mode {
+    background-color: white;
+}
+
+.clase1 {
+    background: #f9f9f9;
+    padding: 20px;
+    width: 75%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.clase1 img {
+    display: block;
+}
+
+.clase2 {
+    background: #f9f9f9;
+    padding: 20px;
+    width: 75%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h2 {
+    color: blue;
+}

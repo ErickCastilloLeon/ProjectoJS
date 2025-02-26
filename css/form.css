@@ -1,0 +1,77 @@
+body {
+    transition: background-color 0.3s ease;
+}
+
+.shadowed-form {
+    background: #f9f9f9;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.shadowed-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.shadowed-form input[type="text"],
+.shadowed-form input[type="email"],
+.shadowed-form select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.shadowed-form .gender-group {
+    margin-top: 10px;
+}
+
+.shadowed-form button {
+    margin-top: 15px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.shadowed-form p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+}
+
+.gender-group input,
+.gender-group label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+#modeButton {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    color: white;
+}
+
+.dark-mode {
+    background-color: black;
+}
+
+.light-mode {
+    background-color: white;
+}
