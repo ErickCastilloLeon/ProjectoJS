@@ -1,71 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/personalizer.js"></script>
-    </head>
-    <body>
-        <div class="menu">
-            <label for="personalizer-toggle">Personalizer</label>
-            <a href="form.html">Form</a>
-            <a href="images.html">Images</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/personalizer.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <label for="personalizer-toggle">Personalizer</label>
+        <a href="form.html">Form</a>
+        <a href="images.html">Images</a>
+    </div>
+
+    <h1>Welcome to Personalizer</h1>
+    <p>This is a paragraph that you can adapt its content.</p>
+    <p>Click to Personalizer banner.</p>
+
+    <input type="checkbox" id="personalizer-toggle">
+    <div class="personalizer">
+        <h3>BG_color</h3>
+        <div class="button-group">
+            <div class="color-btn" style="background: pink;" onclick="changeBgColor('pink')"></div>
+            <div class="color-btn" style="background: lightgreen;" onclick="changeBgColor('lightgreen')"></div>
+            <div class="color-btn" style="background: gray;" onclick="changeBgColor('gray')"></div>
+            <div class="color-btn" style="background: black;" onclick="changeBgColor('black')"></div>
+            <div class="color-btn" style="background: white;" onclick="changeBgColor('white')"></div>
         </div>
 
-        <h1>Welcome to Personalizer</h1>
-        <p>This is a paragraph that you can adapt its content.</p>
-        <p>Click to Personalizer banner.</p>
-
-        <input type="checkbox" id="personalizer-toggle">
-        <div class="personalizer">
-            <h3>BG_color</h3>
-            <div class="button-group">
-                <div class="color-btn" style="background: pink;"
-                    onclick="changeBgColor('pink')"></div>
-                <div class="color-btn" style="background: lightgreen;"
-                    onclick="changeBgColor('lightgreen')"></div>
-                <div class="color-btn" style="background: gray;"
-                    onclick="changeBgColor('gray')"></div>
-                <div class="color-btn" style="background: black;"
-                    onclick="changeBgColor('black')"></div>
-                <div class="color-btn" style="background: white;"
-                    onclick="changeBgColor('white')"></div>
-            </div>
-
-            <h3>Change_letters</h3>
-            <div class="button-group">
-                <div class="color-btn" style="background: red;"
-                    onclick="changeTextColor('red')"></div>
-                <div class="color-btn" style="background: blue;"
-                    onclick="changeTextColor('blue')"></div>
-                <div class="color-btn" style="background: green;"
-                    onclick="changeTextColor('green')"></div>
-                <div class="color-btn" style="background: black;"
-                    onclick="changeTextColor('black')"></div>
-                <div class="color-btn" style="background: white;"
-                    onclick="changeTextColor('white')"></div>
-            </div>
-
-            <div class="button-group">
-                <button onclick="changeFontSize('12px')">XS</button>
-                <button onclick="changeFontSize('16px')">S</button>
-                <button onclick="changeFontSize('20px')">M</button>
-                <button onclick="changeFontSize('24px')">L</button>
-                <button onclick="changeFontSize('28px')">XL</button>
-            </div>
-
-            <div class="button-group">
-                <button onclick="changeFontFamily('Arial')">A</button>
-                <button onclick="changeFontFamily('Times New Roman')">T</button>
-                <button onclick="changeFontFamily('Courier New')">C</button>
-                <button onclick="changeFontFamily('Fantasy')">F</button>
-                <button onclick="changeFontFamily('Monospace')">M</button>
-            </div>
+        <h3>Change_letters</h3>
+        <div class="button-group">
+            <div class="color-btn" style="background: red;" onclick="changeTextColor('red')"></div>
+            <div class="color-btn" style="background: blue;" onclick="changeTextColor('blue')"></div>
+            <div class="color-btn" style="background: green;" onclick="changeTextColor('green')"></div>
+            <div class="color-btn" style="background: black;" onclick="changeTextColor('black')"></div>
+            <div class="color-btn" style="background: white;" onclick="changeTextColor('white')"></div>
         </div>
 
-        <script>
+        <div class="button-group">
+            <button onclick="changeFontSize('12px')">XS</button>
+            <button onclick="changeFontSize('16px')">S</button>
+            <button onclick="changeFontSize('20px')">M</button>
+            <button onclick="changeFontSize('24px')">L</button>
+            <button onclick="changeFontSize('28px')">XL</button>
+        </div>
+
+        <div class="button-group">
+            <button onclick="changeFontFamily('Arial')">A</button>
+            <button onclick="changeFontFamily('Times New Roman')">T</button>
+            <button onclick="changeFontFamily('Courier New')">C</button>
+            <button onclick="changeFontFamily('Fantasy')">F</button>
+            <button onclick="changeFontFamily('Monospace')">M</button>
+        </div>
+    </div>
+
+    <script>
 
     </script>
-    </body>
+</body>
+
 </html>

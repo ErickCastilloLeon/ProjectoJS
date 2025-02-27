@@ -24,6 +24,8 @@ botonCambiar.addEventListener('click', () => {
     imagenMagica.src = obtenerImagenAleatoria();
 });
 
+//-------------------------------------------
+
 const imagenAuto = document.getElementById('imagenAuto');
 
 imagenAuto.src = obtenerImagenAleatoria();
