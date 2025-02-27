@@ -24,5 +24,5 @@ En este formulario deberas completar e lapartado de **Full name** , **Email**,se
 <img src="img_ms/3.png">
 
 Habrá 2 secciones , en una podrás presionar en el boton **Change Image!** para cambiar de imagen aleatoriamente.\
-Mientras que en la otra sección se cambiará de maner automatica entre imagenes
+Mientras que en la otra sección se cambiará de manera automatica entre imagenes
 
