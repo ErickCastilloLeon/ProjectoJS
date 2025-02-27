@@ -1,75 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="css/form.css">
-    </head>
-    <body>
-        <div class="menu">
-            <a href="index.html">Personalizer</a>
-            <a href="form.html">Form</a>
-            <a href="images.html">Images</a>
-            <button id="modeButton">Mode</button>
-        </div>
-        <div class="shadowed-form">
-            <form id="myForm" action="index.html" method="GET">
-                <label for="fullName">Full Name:</label>
-                <input
-                    type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter your full name"
-                    required />
 
-                <label for="email">Email:</label>
-                <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    required />
-                <button type="button" id="validateBtn">Validate</button>
-                <p id="emailFeedback"></p>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/form.css">
+</head>
 
-                <label>Gender:</label>
-                <div class="gender-group">
-                    <input type="radio" id="male" name="gender" value="Male" />
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender"
-                        value="Female" />
-                    <label for="female">Female</label>
-                    <input type="radio" id="other" name="gender"
-                        value="Other" />
-                    <label for="other">Other</label>
-                </div>
+<body>
+    <div class="menu">
+        <a href="personalizer.html">Personalizer</a>
+        <a href="form.html">Form</a>
+        <a href="images.html">Images</a>
+        <button id="modeButton">Mode</button>
+    </div>
+    <div class="shadowed-form">
+        <form id="myForm" action="personalizer.html" method="GET">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
 
-                <label for="country">Country:</label>
-                <select id="country" name="country">
-                    <option value>Select your country</option>
-                    <option value="Spain">Spain</option>
-                    <option value="Other">Other</option>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required />
+            <button type="button" id="validateBtn">Validate</button>
+            <p id="emailFeedback"></p>
+
+            <label>Gender:</label>
+            <div class="gender-group">
+                <input type="radio" id="male" name="gender" value="Male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" />
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other" />
+                <label for="other">Other</label>
+            </div>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value>Select your country</option>
+                <option value="Spain">Spain</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <div id="provinceContainer" style="display: none;">
+                <label for="province">Province:</label>
+                <select id="province" name="province">
+                    <option value="navarra">navarra</option>
+                    <option value="navarra2">navarra2</option>
+                    <option value="navarra3">navarra3</option>
                 </select>
+            </div>
 
-                <div id="provinceContainer" style="display: none;">
-                    <label for="province">Province:</label>
-                    <select id="province" name="province">
-                        <option value="navarra">navarra</option>
-                        <option value="navarra2">navarra2</option>
-                        <option value="navarra3">navarra3</option>
-                    </select>
-                </div>
+            <div id="townContainer" style="display: none;">
+                <label for="town">Town:</label>
+                <select id="town" name="town">
+                    <option value="Pamplona">Pamplona</option>
+                    <option value="Pamplona2">Iruña</option>
+                    <option value="Pamplona3">Pamplona3</option>
+                </select>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="js/form.js"></script>
+</body>
 
-                <div id="townContainer" style="display: none;">
-                    <label for="town">Town:</label>
-                    <select id="town" name="town">
-                        <option value="Pamplona">Pamplona</option>
-                        <option value="Pamplona2">Pamplona2</option>
-                        <option value="Pamplona3">Pamplona3</option>
-                    </select>
-                </div>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <script src="js/form.js"></script>
-    </body>
 </html>
